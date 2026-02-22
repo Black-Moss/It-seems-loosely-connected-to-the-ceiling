@@ -12,16 +12,11 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.DripstoneThickness;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.event.tick.ServerTickEvent;
-import net.neoforged.neoforge.event.entity.EntityJoinLevelEvent;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.UUID;
 
 import static net.minecraft.world.level.block.PointedDripstoneBlock.THICKNESS;
 import static net.minecraft.world.level.block.PointedDripstoneBlock.TIP_DIRECTION;
 
 public class IslcttcEvent {
-    private final Map<UUID, BlockPos> fallingStalactites = new HashMap<>();
 
     @SubscribeEvent
     public void onServerTick(ServerTickEvent.Post event) {
@@ -41,17 +36,6 @@ public class IslcttcEvent {
                         spawnFallingStalactite(state, level, pos);
                     }
                 }
-            }
-        }
-    }
-
-    @SubscribeEvent
-    public void onEntityJoinLevel(EntityJoinLevelEvent event) {
-        if (event.getEntity() instanceof FallingBlockEntity fallingBlock) {
-            BlockState blockState = fallingBlock.getBlockState();
-            if (blockState.is(Blocks.POINTED_DRIPSTONE)) {
-                BlockPos startPos = fallingBlock.blockPosition();
-                fallingStalactites.put(fallingBlock.getUUID(), startPos);
             }
         }
     }
