@@ -2,7 +2,7 @@
 
 # It seems loosely connected to the ceiling
 
-Pointed Dripstone will now fall from the sky and hit everone on the head.
+Pointed Dripstone will now fall from the sky and hit everyone on the head.
 
 Source of inspiration: [Casualties: Unknown](https://orsonik.itch.io/scav-prototype).
 
