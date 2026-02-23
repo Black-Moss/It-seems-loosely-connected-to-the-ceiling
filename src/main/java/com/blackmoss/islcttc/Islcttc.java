@@ -9,7 +9,6 @@ import net.neoforged.neoforge.common.NeoForge;
 public class Islcttc {
     public static final String MODID = "islcttc";
 
-
     public Islcttc(ModContainer modContainer) {
         NeoForge.EVENT_BUS.register(new IslcttcEvent());
 
