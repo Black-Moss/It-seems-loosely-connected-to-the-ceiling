@@ -14,7 +14,7 @@ ps: `It seems loosely connected to the ceiling` is the original text in the game
 * `damageMultiplier`: Damage Multiplier
 
 # 与洞顶的连接似乎并不牢固
-滴水石锥将会从天上掉下来打在所有生物的头上。
+滴水石锥将会从天上掉下来打在所有玩家的头上。
 
 灵感来源：[Casualties: Unknown](https://orsonik.itch.io/scav-prototype)。
 
